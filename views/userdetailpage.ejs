@@ -1,0 +1,47 @@
+<table>
+    <tr>
+        <th>
+            Name:
+        </th>
+        <td>
+            <input type="text" id="name" name="name" value="<%= user.name %>">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Age:
+        </th>
+        <td>
+            <input type="number" id="age" name="age" value="<%= user.age %>">
+
+        </td>
+    </tr>
+    <tr>
+        <th>
+            City:
+        </th>
+        <td>
+            <input type="text" id="city" name="city" value="<%= user.city %>">
+        </td>
+    </tr>
+    <!--
+    <tr>
+        <th>
+            Married:
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio" name="married" value="true">
+            <label for="true">True</label>
+        </td>
+        <td>
+            <input type="radio" name="married" value="false">
+            <label for="false">False</label>
+        </td>
+    </tr>
+-->
+</table>
+<button id="edit" value="<%=user.id%>">Edit</button>
+<button id="delete">Delete</button>
+<script src="/scripts/editUser.js"></script>

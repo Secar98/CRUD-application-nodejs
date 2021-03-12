@@ -1,0 +1,10 @@
+<% if(users) {%>
+    <% for(let user of users) {%>
+        <div class="background">
+            <a href="user/<%=user.id%>">
+                <%= user.name%>
+            </a>
+        </div>
+        <%}%>
+            <%}%>
+                <a href="/addUser">Add User</a>
